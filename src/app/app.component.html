@@ -1,0 +1,35 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span><mat-icon>mood</mat-icon></span>      
+        <span>Material in Angular 2!</span>
+        <button mat-icon-button [mat-menu-trigger-for]="menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+    </mat-toolbar-row>
+    <mat-menu x-position="before" #menu="matMenu">
+        <button mat-menu-item>Option 1</button>
+        <button mat-menu-item>Option 2</button>
+      </mat-menu>
+  </mat-toolbar>
+
+  <mat-card>
+    <button mat-button>A</button>
+    <button mat-raised-button>B</button>
+    <button mat-raised-button color="primary">C</button>
+    <button mat-raised-button color="accent">D</button>
+  </mat-card>
+
+  <mat-card>
+      <button mat-button >OFF</button>
+      <button mat-raised-button >OFF</button>
+      <button mat-mini-fab ><mat-icon>check</mat-icon></button>
+  </mat-card>
+
+  <span class="done">
+    <button mat-fab>
+      <mat-icon>check circle</mat-icon>
+    </button>
+  </span>
+</div>
